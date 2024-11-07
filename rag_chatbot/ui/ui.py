@@ -19,7 +19,7 @@ class DefaultElement:
     DEFAULT_HISTORY: ClassVar[list] = []
     DEFAULT_DOCUMENT: ClassVar[list] = []
 
-    HELLO_MESSAGE: str = "Hi 👋, how can I help you today?"
+    HELLO_MESSAGE: str = "Hi 👋, Welcome to Code Refactorizer!!"
     SET_MODEL_MESSAGE: str = "You need to choose LLM model 🤖 first!"
     EMPTY_MESSAGE: str = "You need to enter your message!"
     DEFAULT_STATUS: str = "Ready!"
@@ -267,7 +267,7 @@ class LocalChatbotUI:
             js=JS_LIGHT_THEME,
             css=CSS,
         ) as demo:
-            gr.Markdown("## Code Refactorizer 🚀 (By Ontario Tech & IBM Toronto Lab")
+            gr.Markdown("## Code Refactorizer 🚀 (Developed By Ontario Tech & IBM Toronto Lab)")
             with gr.Tab("Interface"):
                 sidebar_state = gr.State(True)
                 with gr.Row(variant=self._variant, equal_height=False):
